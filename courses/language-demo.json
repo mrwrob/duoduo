@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "id": "english-demo",
+  "version": 1,
+  "title": "Angielski na dobry początek",
+  "description": "Kurs demonstracyjny · słowa, zdania i małe odkrycia.",
+  "subject": "language",
+  "lessons": [
+    {
+      "id": "first-steps",
+      "title": "Pierwsze kroki",
+      "exercises": [
+        {
+          "id": "fruit",
+          "type": "choice",
+          "prompt": "Które słowa oznaczają owoce?",
+          "multiple": true,
+          "options": [
+            {
+              "id": "o1",
+              "text": "apple"
+            },
+            {
+              "id": "o2",
+              "text": "table"
+            },
+            {
+              "id": "o3",
+              "text": "banana"
+            },
+            {
+              "id": "o4",
+              "text": "window"
+            }
+          ],
+          "correctOptionIds": [
+            "o1",
+            "o3"
+          ],
+          "explanation": "Apple to jabłko, a banana to banan."
+        },
+        {
+          "id": "water",
+          "type": "word_input",
+          "prompt": "Uzupełnij zdanie słowem „woda”.",
+          "template": "I drink {{1}}.",
+          "answers": [
+            [
+              "water"
+            ]
+          ],
+          "answerPolicy": {
+            "allowTypos": true,
+            "caseSensitive": false,
+            "trim": true
+          }
+        },
+        {
+          "id": "sentence",
+          "type": "sentence_input",
+          "prompt": "Uzupełnij: „Ona ma czerwony rower”.",
+          "template": "She {{1}} a {{2}} bike.",
+          "answers": [
+            [
+              "has"
+            ],
+            [
+              "red"
+            ]
+          ],
+          "answerPolicy": {
+            "allowTypos": true,
+            "caseSensitive": false,
+            "trim": true
+          }
+        },
+        {
+          "id": "bank",
+          "type": "sentence_bank",
+          "prompt": "Uzupełnij: „Lubię czytać książki”.",
+          "template": "I {{1}} to read {{2}}.",
+          "options": [
+            {
+              "id": "o1",
+              "text": "like"
+            },
+            {
+              "id": "o2",
+              "text": "books"
+            },
+            {
+              "id": "o3",
+              "text": "water"
+            },
+            {
+              "id": "o4",
+              "text": "runs"
+            }
+          ],
+          "correctOptionIds": [
+            "o1",
+            "o2"
+          ]
+        },
+        {
+          "id": "select",
+          "type": "sentence_select",
+          "prompt": "Zaznacz nazwy zwierząt w zdaniu.",
+          "options": [
+            {
+              "id": "o1",
+              "text": "The"
+            },
+            {
+              "id": "o2",
+              "text": "cat"
+            },
+            {
+              "id": "o3",
+              "text": "and"
+            },
+            {
+              "id": "o4",
+              "text": "the"
+            },
+            {
+              "id": "o5",
+              "text": "dog"
+            },
+            {
+              "id": "o6",
+              "text": "sleep."
+            }
+          ],
+          "correctOptionIds": [
+            "o2",
+            "o5"
+          ]
+        },
+        {
+          "id": "order",
+          "type": "sentence_order",
+          "prompt": "Ułóż zdanie: „Lubię uczyć się nowych słów”.",
+          "options": [
+            {
+              "id": "o1",
+              "text": "I"
+            },
+            {
+              "id": "o2",
+              "text": "like"
+            },
+            {
+              "id": "o3",
+              "text": "learning"
+            },
+            {
+              "id": "o4",
+              "text": "new"
+            },
+            {
+              "id": "o5",
+              "text": "words."
+            }
+          ],
+          "correctOptionIds": [
+            "o1",
+            "o2",
+            "o3",
+            "o4",
+            "o5"
+          ]
+        },
+        {
+          "id": "picture-input",
+          "type": "image_input",
+          "prompt": "Jak nazywa się ta figura po angielsku?",
+          "imageBase64": "iVBORw0KGgoAAAANSUhEUgAAAoAAAAFoCAIAAABIUN0GAAAFzUlEQVR4nO3bMQ0CURRFQSC4oUbDWqAFYdBiAQ3U2NiEYntEkHD42RkFtzt5xdu+l3kDAPzWrh4AAGskwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABILCvB4zkcD7VEwD+3et2ryeMwQUMAAEBBoCAAANAQIABICDAABAQYAAIeEP61uN6rCcANKbLs54wMBcwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASCwrwcMb7o86wkAjMcFDAABAQaAgAADQECAASAgwAAQEGAACGzfy1xvAIDVcQEDQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoDAB4xfD/EdGzRsAAAAAElFTkSuQmCC",
+          "imageAlt": "Prostokąt o poziomej podstawie dłuższej od wysokości.",
+          "answers": [
+            [
+              "rectangle"
+            ]
+          ],
+          "answerPolicy": {
+            "allowTypos": true,
+            "caseSensitive": false,
+            "trim": true
+          }
+        },
+        {
+          "id": "picture-choice",
+          "type": "image_choice",
+          "prompt": "Wybierz angielską nazwę figury.",
+          "imageBase64": "iVBORw0KGgoAAAANSUhEUgAAAoAAAAFoCAIAAABIUN0GAAAFzUlEQVR4nO3bMQ0CURRFQSC4oUbDWqAFYdBiAQ3U2NiEYntEkHD42RkFtzt5xdu+l3kDAPzWrh4AAGskwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABILCvB4zkcD7VEwD+3et2ryeMwQUMAAEBBoCAAANAQIABICDAABAQYAAIeEP61uN6rCcANKbLs54wMBcwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASCwrwcMb7o86wkAjMcFDAABAQaAgAADQECAASAgwAAQEGAACGzfy1xvAIDVcQEDQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoCAAANAQIABICDAABAQYAAICDAABAQYAAICDAABAQaAgAADQECAASAgwAAQEGAACAgwAAQEGAACAgwAAQEGgIAAA0BAgAEgIMAAEBBgAAgIMAAEBBgAAgIMAAEBBoDAB4xfD/EdGzRsAAAAAElFTkSuQmCC",
+          "imageAlt": "Prostokąt o poziomej podstawie dłuższej od wysokości.",
+          "options": [
+            {
+              "id": "o1",
+              "text": "circle"
+            },
+            {
+              "id": "o2",
+              "text": "rectangle"
+            },
+            {
+              "id": "o3",
+              "text": "triangle"
+            }
+          ],
+          "correctOptionIds": [
+            "o2"
+          ]
+        }
+      ]
+    }
+  ]
+}
